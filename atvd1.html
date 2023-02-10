@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .button {
+    background-color: #3700ff; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    }
+    .buton {
+    background-color: #3700ff; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Votaçaõ</h1>
+    <button onclick="calcular()" class="button">Mercedes</button>
+    <button onclick="calcula()" class="buton">BMW</button>
+    <p>Votos Mercedes: <span id="vMerce"></span></p>
+    <p>Votos BMW: <span id="vBMW"></span></p>
+    <p>Total de votos: <span id="tVotos"></span></p>
+    
+    <script>
+        let mercedes = 0;
+        let bmw = 0;
+        let total = 0;
+        let text;
+        
+        function calcular() {
+            mercedes = document.getElementById("vMerce").innerHTML = mercedes +1;
+            total++;
+            document.getElementById("tVotos").innerHTML = total
+        }
+        function calcula() {
+            bmw = document.getElementById("vBMW").innerHTML = bmw +1;
+            total++;
+            document.getElementById("tVotos").innerHTML = total
+        }
+        
+
+        
+    </script>
+</body>
+</html>
